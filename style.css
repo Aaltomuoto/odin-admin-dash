@@ -1,13 +1,17 @@
 body {
     margin: 0;
     display: grid;
-    grid-template-columns: auto 3fr 1fr;
+    grid-template-columns: auto 3fr 300px;
     grid-template-rows:auto 1fr;
 }
 ul {
     padding: 0;
     margin: 0;
     list-style: none;
+}
+figure {
+    padding: 0;
+    margin: 0;
 }
 header {
     grid-row: 1;
@@ -67,14 +71,14 @@ main, aside {
 }
 main {
     grid-row: 2;
-    padding: 1rem 0 0 1rem;
+    padding:1rem;
 }
 main > .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
     gap: 1rem;
 }
-main > .grid > div {
+main > .grid > div, .announcements, .trending {
     background-color: #FFF;
     padding: 1rem;
     border-radius: .5rem;
@@ -96,4 +100,30 @@ main h2 {
 }
 aside {
     grid-row: 2;
+    padding: 1.5rem .5rem 0 0;
+}
+aside h4, aside p {
+    margin: 0;
+}
+aside li {
+    padding: 1em;
+}
+
+.announcements li {
+    border-bottom: 1px lightgray solid;
+}
+.announcements li:last-child {
+    border-bottom: none;
+}
+.trending ul li {
+    display: grid;
+    grid-template-columns: 4rem max-content;
+    align-items: center;
+    gap: 1rem;
+}
+.trending ul li figure {
+    grid-row: 1 / -1;
+    height: 4rem;
+    width: 4rem;
+    background-color: olive;
 }
