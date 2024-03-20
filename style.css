@@ -7,6 +7,26 @@ body {
 header {
     grid-row: 1;
     grid-column: 2 / -1;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 1em;
+    padding: 1em 3em;
+}
+header form {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.usermenu ul {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin: 0;
+    padding: 0;
+}
+header nav {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(150px,1fr));
+    gap: 2em;
 }
 body > nav {
     grid-row: 1 / -1;
