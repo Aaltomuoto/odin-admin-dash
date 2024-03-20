@@ -1,7 +1,7 @@
 body {
     margin: 0;
     display: grid;
-    grid-template-columns: auto 4fr 1fr;
+    grid-template-columns: auto 3fr 1fr;
     grid-template-rows:auto 1fr;
 }
 ul {
@@ -67,6 +67,32 @@ main, aside {
 }
 main {
     grid-row: 2;
+    padding: 1rem 0 0 1rem;
+}
+main > .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    gap: 1rem;
+}
+main > .grid > div {
+    background-color: #FFF;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+main > .grid > div > h3 {
+    margin: 0;
+}
+main > .grid > div > p {
+    margin: 0 0 1rem;
+}
+main > .grid > div > ul {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: end;
+    gap: 1rem;
+}
+main h2 {
+    grid-column: span 2;
 }
 aside {
     grid-row: 2;
