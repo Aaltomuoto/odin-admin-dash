@@ -1,17 +1,22 @@
 body {
     margin: 0;
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: auto 4fr 1fr;
     grid-template-rows:auto 1fr;
 }
 header {
     grid-row: 1;
     grid-column: 2 / -1;
 }
-nav {
+body > nav {
     grid-row: 1 / -1;
     grid-column: 1;
-    height: 100vh;
+    min-height: 100vh;
+    background: #1992D4;
+    color: #FFF;
+}
+main, aside {
+    background-color: #E2E8F0;
 }
 main {
     grid-row: 2;
