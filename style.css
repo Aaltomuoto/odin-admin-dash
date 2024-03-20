@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows:auto 1fr;
+}
+header {
+    grid-row: 1;
+    grid-column: 2 / -1;
+}
+nav {
+    grid-row: 1 / -1;
+    grid-column: 1;
+    height: 100vh;
+}
+main {
+    grid-row: 2;
+}
+aside {
+    grid-row: 2;
+}
