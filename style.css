@@ -3,6 +3,7 @@ body {
     display: grid;
     grid-template-columns: 20rem 3fr 18.75rem;
     grid-template-rows:auto 1fr;
+    font-family: 'Roboto', sans-serif;
 }
 ul {
     padding: 0;
