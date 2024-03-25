@@ -152,6 +152,7 @@ main {
 main h2, main h3, aside h2 {
     font-weight: 500;
     font-size: 1.25rem;
+    margin: 1rem 0 1rem;
 }
 main > .grid {
     display: grid;
@@ -194,7 +195,13 @@ main h2 {
 }
 aside {
     grid-row: 2;
-    padding: 1rem 2rem 0 0;
+    padding: 1rem 2rem 1rem 0;
+}
+aside div {
+    margin-bottom: 3rem;
+}
+aside div:last-child {
+    margin-bottom: 0;
 }
 aside h4, aside p {
     margin: 0;
