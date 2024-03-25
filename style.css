@@ -243,4 +243,5 @@ aside h4, aside p {
     width: 4rem;
     background-color: olive;
     border-radius: 50%;
+    overflow: hidden;
 }
