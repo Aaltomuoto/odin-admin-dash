@@ -261,9 +261,12 @@ aside h4, aside p {
 }
 .announcements li {
     border-bottom: 1px var(--bg-color) solid;
-    font-size: .75rem;
+    font-size: .8rem;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
+}
+.announcements li h4 {
+    font-size: .9rem;
 }
 .announcements li:last-child {
     border-bottom: none;
