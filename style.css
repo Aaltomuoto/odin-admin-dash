@@ -149,8 +149,9 @@ main {
     grid-row: 2;
     padding:1rem;
 }
-main h2, main h3 {
+main h2, main h3, aside h2 {
     font-weight: 500;
+    font-size: 1.25rem;
 }
 main > .grid {
     display: grid;
