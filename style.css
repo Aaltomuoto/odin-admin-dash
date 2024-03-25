@@ -236,6 +236,7 @@ aside h4, aside p {
     grid-template-columns: 4rem max-content;
     align-items: center;
     gap: 1rem;
+    font-size: .9rem;
 }
 .trending ul li figure {
     grid-row: 1 / -1;
@@ -244,4 +245,10 @@ aside h4, aside p {
     background-color: olive;
     border-radius: 50%;
     overflow: hidden;
+}
+.trending ul li div span {
+    display: block;
+}
+.trending ul li div span:first-child {
+    color: var(--black);
 }
