@@ -58,6 +58,7 @@ body {
     grid-template-rows:auto 1fr;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    line-height: 1.25;
 }
 ul {
     padding: 0;
@@ -197,6 +198,9 @@ aside {
     grid-row: 2;
     padding: 1rem 2rem 1rem 0;
 }
+aside ul {
+    padding: 1rem;
+}
 aside div {
     margin-bottom: 3rem;
 }
@@ -206,15 +210,20 @@ aside div:last-child {
 aside h4, aside p {
     margin: 0;
 }
-aside li {
-    padding: 1em;
-}
-
 .announcements li {
     border-bottom: 1px var(--bg-color) solid;
+    font-size: .75rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 .announcements li:last-child {
     border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.trending ul {
+    display: grid;
+    gap: 1rem;
 }
 .trending ul li {
     display: grid;
@@ -227,4 +236,5 @@ aside li {
     height: 4rem;
     width: 4rem;
     background-color: olive;
+    border-radius: 50%;
 }
