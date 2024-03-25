@@ -155,11 +155,13 @@ main > .grid > div, .announcements, .trending {
     border-radius: .5rem;
 }
 main > .grid > div {
-    padding: 2rem;
+    padding: 2rem 2rem 1.5rem 1.5rem;
     border-left: .5rem #F0B42A solid;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 main > .grid > div > h3 {
-    margin: 0 0 .5rem;
+    margin: 0 0 .25rem;
 }
 main > .grid > div > p {
     margin: 0 0 1rem;
