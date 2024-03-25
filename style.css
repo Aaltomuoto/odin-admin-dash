@@ -167,6 +167,7 @@ header nav button {
     border: none;
     padding: 0 1.5rem;
     border-radius: 1rem;
+    cursor: pointer;
 }
 body > nav {
     grid-row: 1 / -1;
